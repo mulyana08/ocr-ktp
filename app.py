@@ -29,9 +29,19 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Custom CSS with light blue background theme
 st.markdown("""
 <style>
+    /* Apply light blue background to main container */
+    .stApp {
+        background-color: #e3f2fd;
+    }
+    
+    /* Apply light blue background to sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #bbdefb;
+    }
+    
     .main-header {
         font-size: 2.5rem;
         font-weight: bold;
